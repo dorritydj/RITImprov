@@ -1,0 +1,12 @@
+Username: joe_natalzia, deleted event with an id of 12 on Sat, 10 Aug 13 02:20:35 +0000
+Username: joe_natalzia, deleted event with an id of 11 on Sat, 10 Aug 13 02:20:38 +0000
+Username: joe_natalzia, deleted event with an id of 13 on Sat, 10 Aug 13 02:46:58 +0000
+Username: joe_natalzia, deleted event with an id of 15 on Sat, 10 Aug 13 02:47:41 +0000
+Username: joe_natalzia, deleted event with an id of 14 on Sat, 10 Aug 13 02:47:54 +0000
+Username: joe_natalzia, deleted event with an id of 16 on Fri, 09 Aug 13 19:59:15 -0700
+Username: joe_natalzia, deleted event with an id of 17 on Fri, 09 Aug 13 20:03:06 -0700
+Username: joe_natalzia, deleted event with an id of 18 on Mon, 19 Aug 13 16:48:10 -0700
+Username: joe_natalzia, deleted event with an id of 19 on Mon, 19 Aug 13 19:00:20 -0700
+Username: joe_natalzia, deleted event with an id of 20 on Mon, 19 Aug 13 19:13:27 -0700
+Username: joe_natalzia, deleted event with an id of 22 on Tue, 20 Aug 13 16:05:12 -0700
+Username: joe_natalzia, deleted event with an id of 23 on Tue, 20 Aug 13 16:06:32 -0700
