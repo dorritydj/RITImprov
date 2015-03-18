@@ -103,10 +103,3 @@ h1,h2,h3,h4,h5,h6 { font-family: "MouseMemoirs"; }
 	background-color: #BB294B;
 	color: #fff;
 }
-
-.ajax-loader {
-    background-image: url("../images/ajax-loader.gif");
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-}
