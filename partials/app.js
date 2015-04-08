@@ -1,4 +1,4 @@
-var app = angular.module('ritImprov', ['ngRoute']);
+var app = angular.module('ritImprov', ['ngRoute', 'viewhead']);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/home', {
@@ -8,6 +8,11 @@ app.config(function($routeProvider) {
             img: ['$timeout', function($timeout) {
                 return $timeout(function() {
                     return "imgs/logoBlue.png";
+                }, 500);
+            }],
+            icon: ['$timeout', function($timeout) {
+                return $timeout(function() {
+                    return "imgs/DuckBlue.ico";
                 }, 500);
             }]
         }
@@ -21,6 +26,13 @@ app.config(function($routeProvider) {
                 {
                     return "imgs/logoOrange.png";
                 }, 500);
+            }],
+            icon: ['$timeout', function ($timeout)
+            {
+                return $timeout(function ()
+                {
+                    return "imgs/DuckOrange.ico";
+                }, 500);
             }]
         }
     }).when('/bios', {
@@ -32,6 +44,13 @@ app.config(function($routeProvider) {
                 return $timeout(function ()
                 {
                     return "imgs/logoPink.png";
+                }, 500);
+            }],
+            icon: ['$timeout', function ($timeout)
+            {
+                return $timeout(function ()
+                {
+                    return "imgs/DuckPink.ico";
                 }, 500);
             }]
         }
@@ -45,6 +64,13 @@ app.config(function($routeProvider) {
                 {
                     return "imgs/logoBlue.png";
                 }, 500);
+            }],
+            icon: ['$timeout', function ($timeout)
+            {
+                return $timeout(function ()
+                {
+                    return "imgs/DuckBlue.ico";
+                }, 500);
             }]
         }
     }).when('/improvamonium', {
@@ -57,6 +83,13 @@ app.config(function($routeProvider) {
                 {
                     return "imgs/logoBlue.png";
                 }, 500);
+            }],
+            icon: ['$timeout', function ($timeout)
+            {
+                return $timeout(function ()
+                {
+                    return "imgs/DuckBlue.ico";
+                }, 500);
             }]
         }
     }).when('/workshops', {
@@ -66,6 +99,13 @@ app.config(function($routeProvider) {
             img: ['$timeout', function($timeout) {
                 return $timeout(function() {
                     return "imgs/logoGreen.png";
+                }, 500);
+            }],
+            icon: ['$timeout', function ($timeout)
+            {
+                return $timeout(function ()
+                {
+                    return "imgs/DuckGreen.ico";
                 }, 500);
             }]
         }

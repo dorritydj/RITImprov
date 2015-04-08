@@ -11,3 +11,4 @@
 /// <reference path="../partials/bios/biosController.js" />
 /// <reference path="../partials/events/eventController.js" />
 /// <reference path="../partials/improvamonium/improvController.js" />
+/// <reference path="angularjs-viewhead.js" />
