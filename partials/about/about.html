@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<div>
+    <div>
+        <img ng-if="aboutCtrl.img != ''" ng-src="{{aboutCtrl.img}}" />
+    </div>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>About - RIT Improv</title>
-</head>
-<body>
+    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
+        <li>{{nav.name}}</li>
+    </a>
 
-</body>
-</html>
+
+</div>

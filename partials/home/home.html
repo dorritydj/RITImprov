@@ -1,5 +1,9 @@
 ﻿<div>
+    <div>
+        <img ng-if="homeCtrl.img != ''" ng-src="{{homeCtrl.img}}" />
+    </div>
 
-    This is home
-
+    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
+        <li>{{nav.name}}</li>
+    </a>
 </div>

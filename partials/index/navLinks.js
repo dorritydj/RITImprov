@@ -3,30 +3,26 @@
 app.constant('navLinks', [
         {
             "name": "home",
-            "link": "/",
-            "color": "blue"
+            "link": "#/home",
         },
         {
             "name": "bios",
-            "link": "/bios",
-            "color": "pink"
+            "link": "#/bios",
         },
         {
             "name": "workshops",
-            "link": "/workshops",
-            "color": "green"
+            "link": "#/workshops",
         },
         {
             "name": "events",
-            "link": "/events"
+            "link": "#/events"
         },
         {
             "name": "improvamonium",
-            "link": "/improvamonium"
+            "link": "#/improvamonium"
         },
         {
             "name": "about",
-            "link": "/about",
-            "color": "orange"
+            "link": "#/about",
         }
     ])

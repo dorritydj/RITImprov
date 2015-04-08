@@ -10,20 +10,17 @@
 
     <script src="partials/app.js"></script>
     <script src="partials/index/appController.js"></script>
+    <script src="partials/home/homeController.js"></script>
+    <script src="partials/workshops/workshopController.js"></script>
+    <script src="partials/about/aboutController.js"></script>
+    <script src="partials/bios/biosController.js"></script>
+    <script src="partials/events/eventController.js"></script>
+    <script src="partials/improvamonium/improvController.js"></script>
     <script src="partials/index/navLinks.js"></script>
 
 </head>
 <body ng-controller="appCtrl as appCtrl">
-<ul ng-controller="imgCtrl as imgCtrl">
-
-    <div>
-        <!--Try and show images for each color based on something-->
-    </div>
-
-    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
-        <li>{{nav.name}}</li>
-    </a>
-
+<ul>
     <div ng-view></div>
 </ul>
 </body>
