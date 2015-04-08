@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="ritImprov">
+<head>
+    <meta charset="utf-8" />
+    <title>Home - RIT Improv</title>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+
+    <script src="partials/app.js"></script>
+    <script src="partials/index/appController.js"></script>
+    <script src="partials/index/navLinks.js"></script>
+
+</head>
+<body ng-controller="appCtrl as appCtrl">
+<ul ng-controller="imgCtrl as imgCtrl">
+
+    <div>
+        <!--Try and show images for each color based on something-->
+    </div>
+
+    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
+        <li>{{nav.name}}</li>
+    </a>
+
+    <div ng-view></div>
+</ul>
+</body>
+</html>
