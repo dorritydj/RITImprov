@@ -5,15 +5,19 @@
     <meta charset="utf-8" />
     <title ng-bind-template="{{viewTitle}} - RIT Improv">RIT Improv</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-route.min.js"></script>
     <script src="scripts/angularjs-viewhead.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-0.12.1.min.js"></script>
 
+    <!--Angular Module Declaration and Routing-->
     <script src="partials/app.js"></script>
+
+    <!--Angular Controllers-->
     <script src="partials/index/appController.js"></script>
     <script src="partials/home/homeController.js"></script>
     <script src="partials/workshops/workshopController.js"></script>
@@ -21,10 +25,13 @@
     <script src="partials/bios/biosController.js"></script>
     <script src="partials/events/eventController.js"></script>
     <script src="partials/improvamonium/improvController.js"></script>
+
+    <!--Angular Constants-->
     <script src="partials/index/navLinks.js"></script>
+    <script src="partials/events/eventInfo.js"></script>
 
 </head>
 <body ng-controller="appCtrl as appCtrl">
-<div ng-view></div>
+    <div ng-view></div>
 </body>
 </html>

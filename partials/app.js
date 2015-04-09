@@ -1,4 +1,4 @@
-var app = angular.module('ritImprov', ['ngRoute', 'viewhead']);
+var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap']);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/home', {
@@ -7,12 +7,12 @@ app.config(function($routeProvider) {
         resolve: {
             img: ['$timeout', function($timeout) {
                 return $timeout(function() {
-                    return "imgs/logoBlue.png";
+                    return "imgs/logos/logoBlue.png";
                 }, 500);
             }],
             icon: ['$timeout', function($timeout) {
                 return $timeout(function() {
-                    return "imgs/DuckBlue.ico";
+                    return "imgs/favicons/DuckBlue.ico";
                 }, 500);
             }]
         }
@@ -24,14 +24,14 @@ app.config(function($routeProvider) {
             {
                 return $timeout(function ()
                 {
-                    return "imgs/logoOrange.png";
+                    return "imgs/logos/logoOrange.png";
                 }, 500);
             }],
             icon: ['$timeout', function ($timeout)
             {
                 return $timeout(function ()
                 {
-                    return "imgs/DuckOrange.ico";
+                    return "imgs/favicons/DuckOrange.ico";
                 }, 500);
             }]
         }
@@ -43,14 +43,14 @@ app.config(function($routeProvider) {
             {
                 return $timeout(function ()
                 {
-                    return "imgs/logoPink.png";
+                    return "imgs/logos/logoPink.png";
                 }, 500);
             }],
             icon: ['$timeout', function ($timeout)
             {
                 return $timeout(function ()
                 {
-                    return "imgs/DuckPink.ico";
+                    return "imgs/favicons/DuckPink.ico";
                 }, 500);
             }]
         }
@@ -62,14 +62,14 @@ app.config(function($routeProvider) {
             {
                 return $timeout(function ()
                 {
-                    return "imgs/logoBlue.png";
+                    return "imgs/logos/logoBlue.png";
                 }, 500);
             }],
             icon: ['$timeout', function ($timeout)
             {
                 return $timeout(function ()
                 {
-                    return "imgs/DuckBlue.ico";
+                    return "imgs/favicons/DuckBlue.ico";
                 }, 500);
             }]
         }
@@ -81,14 +81,14 @@ app.config(function($routeProvider) {
             {
                 return $timeout(function ()
                 {
-                    return "imgs/logoBlue.png";
+                    return "imgs/logos/logoBlue.png";
                 }, 500);
             }],
             icon: ['$timeout', function ($timeout)
             {
                 return $timeout(function ()
                 {
-                    return "imgs/DuckBlue.ico";
+                    return "imgs/favicons/DuckBlue.ico";
                 }, 500);
             }]
         }
@@ -98,14 +98,14 @@ app.config(function($routeProvider) {
         resolve: {
             img: ['$timeout', function($timeout) {
                 return $timeout(function() {
-                    return "imgs/logoGreen.png";
+                    return "imgs/logos/logoGreen.png";
                 }, 500);
             }],
             icon: ['$timeout', function ($timeout)
             {
                 return $timeout(function ()
                 {
-                    return "imgs/DuckGreen.ico";
+                    return "imgs/favicons/DuckGreen.ico";
                 }, 500);
             }]
         }

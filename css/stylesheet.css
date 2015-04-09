@@ -14,12 +14,11 @@ a {
     margin: auto;
     background-color: #FFF;
     width: 95%;
-    min-width: 1200px;
 }
 
 .header {
     background-color: #232323;
-    padding: 1.5% 3.5% 3.5%
+    padding: 1.5% 3.5% .5%;
 }
 
 .picLogo {
@@ -40,56 +39,34 @@ a {
     font-size: 150%;
 }
 
-li.home.current {
+.nav, .pagination, .carousel, .panel-title a {
+     cursor: pointer;
+}
+
+.slidePic {
+    height: 100vh;
+}
+
+li.home.current, li.home > a:hover {
     color: #4994CE;
-    font-weight: bold;
 }
 
-li.home > a:hover {
-    color: #4994CE;
-}
-
-li.bios.current {
-    color: #DA2373;
-    font-weight: bold;
-}
-
-li.bios > a:hover {
+li.bios.current, li.bios > a:hover{
     color: #DA2373;
 }
 
-li.workshops.current {
-    color: #6EBC42;
-    font-weight:bold;
-}
-
-li.workshops > a:hover {
+li.workshops.current, li.workshops > a:hover{
     color: #6EBC42;
 }
 
-li.events.current {
-    color: #4994CE;
-    font-weight: bold;
-}
-
-li.events > a:hover {
+li.events.current, li.events > a:hover{
     color: #4994CE;
 }
 
-li.improv.current {
-    color: #4994CE;
-    font-weight: bold;
-}
-
-li.improv > a:hover {
+li.improv.current, li.improv > a:hover{
     color: #4994CE;
 }
 
-li.about.current {
-    color: #F37E1F;
-    font-weight: bold;
-}
-
-li.about > a:hover {
+li.about.current, li.about > a:hover{
     color: #F37E1F;
 }

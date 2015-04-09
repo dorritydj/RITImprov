@@ -12,3 +12,7 @@
 /// <reference path="../partials/events/eventController.js" />
 /// <reference path="../partials/home/homeController.js" />
 /// <reference path="../partials/improvamonium/improvController.js" />
+/// <reference path="ui-bootstrap-0.12.1.min.js" />
+/// <reference path="bootstrap.min.js" />
+/// <reference path="ui-bootstrap-tpls-0.12.1.min.js" />
+/// <reference path="../partials/events/eventInfo.js" />
