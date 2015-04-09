@@ -19,6 +19,7 @@ a {
 .header {
     background-color: #232323;
     padding: 1.5% 3.5% .5%;
+    max-height: 20vh;
 }
 
 .picLogo {
@@ -34,6 +35,7 @@ a {
     float: left;
     list-style: outside none none;
     margin-right: 1em;
+    margin-top: .45em;
     font-family: sans-serif;
     color: #EBECEE;
     font-size: 150%;
@@ -48,7 +50,7 @@ a {
 }
 
 .slidePic {
-    height: 100vh;
+    max-height: 100vh;
 }
 
 li.home.current, li.home > a:hover {
