@@ -1,12 +1,17 @@
 ﻿<view-title>Home</view-title>
 <link view-head rel="shortcut icon" ng-href="{{homeCtrl.icon}}"/>
 
-<div>
-    <div>
-        <img ng-if="homeCtrl.img != ''" ng-src="{{homeCtrl.img}}" />
+<div class="mainContainer">
+
+    <div class="header">
+        <div>
+            <img class="picLogo" ng-if="homeCtrl.img != ''" ng-src="{{homeCtrl.img}}" />
+        </div>
+        <ul class="nav">
+            <li ng-class="{current: homeCtrl.img != '' && nav.name == 'home', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav" >
+                <a ng-href ="{{nav.link}}">{{nav.name}}</a>
+            </li>
+        </ul>
     </div>
 
-    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
-        <li>{{nav.name}}</li>
-    </a>
 </div>
