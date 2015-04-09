@@ -1,12 +1,10 @@
-﻿<view-title>Home</view-title>
+﻿<view-title>Home - </view-title>
 <link view-head rel="shortcut icon" ng-href="{{homeCtrl.icon}}"/>
 
 <div class="mainContainer">
 
     <div class="header">
-        <div>
-            <img class="picLogo" ng-if="homeCtrl.img != ''" ng-src="{{homeCtrl.img}}"/>
-        </div>
+        <img class="picLogo" ng-if="homeCtrl.img != ''" ng-src="{{homeCtrl.img}}"/>
         <ul class="nav">
             <li ng-class="{current: homeCtrl.img != '' && nav.name == 'home', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
                 <a ng-href="{{nav.link}}">{{nav.name}}</a>
@@ -14,7 +12,7 @@
         </ul>
     </div>
 
-    <carousel interval ="7000">
+    <carousel interval ="4000">
         <slide ng-repeat="slide in homeCtrl.slides | limitTo: 5">
             <img class="slidePic center-block" ng-src="{{slide.img}}"/>
         </slide>

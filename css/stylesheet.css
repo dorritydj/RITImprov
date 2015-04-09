@@ -26,7 +26,7 @@ a {
     height: 25%;
     float: left;
     margin-top: -2.4%;
-    margin-right: 3.5%;
+    margin-left: -1.8%;
 }
 
 .nav li{
@@ -37,6 +37,10 @@ a {
     font-family: sans-serif;
     color: #EBECEE;
     font-size: 150%;
+}
+
+.nav li > a:hover {
+    background-color: #232323;
 }
 
 .nav, .pagination, .carousel, .panel-title a {
