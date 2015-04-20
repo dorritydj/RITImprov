@@ -5,5 +5,4 @@ app.controller('appCtrl', ['navLinks',
         var self = this;
 
         self.nav = navLinks;
-        //self.img = img;
     }])

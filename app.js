@@ -1,4 +1,4 @@
-var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap']);
+var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap', 'gapi']);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/home', {

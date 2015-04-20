@@ -8,30 +8,34 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
+    <!--External JavaScript Libraries -->
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-route.min.js"></script>
     <script src="scripts/angularjs-viewhead.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="scripts/gapi.js"></script>
 
     <!--Angular Module Declaration and Routing-->
-    <script src="partials/app.js"></script>
+    <script src="app.js"></script>
 
     <!--Angular Controllers-->
-    <script src="partials/index/appController.js"></script>
-    <script src="partials/home/homeController.js"></script>
-    <script src="partials/workshops/workshopController.js"></script>
-    <script src="partials/about/aboutController.js"></script>
-    <script src="partials/bios/biosController.js"></script>
-    <script src="partials/events/eventController.js"></script>
-    <script src="partials/improvamonium/improvController.js"></script>
+    <script src="appController.js"></script>
+    <script src="homeController.js"></script>
+    <script src="workshopController.js"></script>
+    <script src="aboutController.js"></script>
+    <script src="biosController.js"></script>
+    <script src="eventController.js"></script>
+    <script src="improvController.js"></script>
+    <script src="partials/home/gCalendar.js"></script>
 
     <!--Angular Constants-->
-    <script src="partials/index/navLinks.js"></script>
-    <script src="partials/events/eventInfo.js"></script>
+    <script src="navLinks.js"></script>
+    <script src="eventInfo.js"></script>
 
 </head>
 <body ng-controller="appCtrl as appCtrl">
-    <div ng-view></div>
+<div ng-view></div>
 </body>
 </html>
