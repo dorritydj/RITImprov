@@ -11,7 +11,7 @@ app.controller('homeController', ['img', 'icon', 'eventInfo', 'calId', 'Calendar
 
     self.init = function() {
         self.loadEvent();
-        self.getCalendarEvents();
+        //self.getCalendarEvents();
     };
 
     self.loadEvent = function() {
@@ -20,7 +20,7 @@ app.controller('homeController', ['img', 'icon', 'eventInfo', 'calId', 'Calendar
         }
     };
 
-    self.getCalendarEvents = function(){
+    /*self.getCalendarEvents = function(){
         GAPI.init();
 
         var calPromise = Calendar.getCalendars(self.cal);
@@ -28,7 +28,7 @@ app.controller('homeController', ['img', 'icon', 'eventInfo', 'calId', 'Calendar
         calPromise.then(function(data){
             console.log(data);
         })
-    };
+    };*/
 
     self.init();
 }]);

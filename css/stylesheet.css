@@ -41,16 +41,9 @@ a {
     font-size: 150%;
 }
 
-.nav li > a:hover {
+/*Navigation Styles*/
+.nav li > a:hover, .nav li > a:focus {
     background-color: #232323;
-}
-
-.nav, .pagination, .carousel, .panel-title a {
-     cursor: pointer;
-}
-
-.slidePic {
-    max-height: 100vh;
 }
 
 li.home.current, li.home > a:hover {
@@ -76,3 +69,53 @@ li.improv.current, li.improv > a:hover{
 li.about.current, li.about > a:hover{
     color: #F37E1F;
 }
+
+/*About Page Styles*/
+.aboutBox{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+.aboutHeader{
+    color: #F37E1F;
+    border-bottom: 2px solid #F37E1F;
+}
+
+.aboutSection > h2{
+    padding-bottom: .5%;
+}
+
+.aboutSection > p{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 16px;
+}
+
+form{
+    padding-left: 1.5%;
+}
+
+input.form-control{
+    width: 15%;
+}
+
+textarea.form-control{
+    width: 25%;
+}
+
+/*Bios Page Styles*/
+
+/*Events Page Styles*/
+
+/*Home Page Styles*/
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+.slidePic {
+    max-height: 100vh;
+}
+
+/*Improvamonium Page Styles*/
+
+/*Workshops Page Styles*/

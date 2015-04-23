@@ -2,6 +2,20 @@
 
 app.constant('eventInfo',[
     {
+        "name": "Closing Mike Night",
+        "date": "Saturday, April 25th",
+        "time": "8PM",
+        "loc": "Carlson Auditorium",
+        "img": "imgs/events/closingMikeNight-Improvessionals.png"
+    },
+    {
+        "name": "Straight to VHS",
+        "date": "Friday, April 17th",
+        "time": "8PM",
+        "loc": "Carlson Auditorium",
+        "img": "imgs/events/straightToVHS-WIP.png"
+    },
+    {
         "name": "Times New Improv",
         "date": "Friday, April 10th",
         "time": "8PM",

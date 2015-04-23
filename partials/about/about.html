@@ -1,14 +1,42 @@
-﻿<view-title>About</view-title>
+﻿<view-title>About -</view-title>
 <link view-head rel="shortcut icon" ng-href="{{aboutCtrl.icon}}" />
 
 <div>
-    <div>
-        <img ng-if="aboutCtrl.img != ''" ng-src="{{aboutCtrl.img}}" />
+    <div class="header">
+        <img class="picLogo" ng-if="aboutCtrl.img != ''" ng-src="{{aboutCtrl.img}}"/>
+        <ul class="nav">
+            <li ng-class="{current: aboutCtrl.img != '' && nav.name == 'about', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
+                <a ng-href="{{nav.link}}">{{nav.name}}</a>
+            </li>
+        </ul>
     </div>
 
-    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
-        <li>{{nav.name}}</li>
-    </a>
+    <div class="aboutBox">
+        <div class="aboutSection">
+            <h2 class="aboutHeader">About Us</h2>
+            <p>RIT Improv provides frequent, fun, and free improv comedy to the Rochester Institute of Technology. We perform both on and off campus, teach free Improv Workshops twice a week from Orientation to Graduation, and advocate creative and spontaneous thinking all year long. We are also huge fans of ducks and dinosaurs.</p>
+        </div>
 
+        <div class="aboutSection">
+            <h2 class="aboutHeader">History</h2>
+            <p>Once upon a time, way back in 2006, there were six RIT freshmen boys who made a startling realization. The Rochester Institute of Technology - located in Rochester, NY, which has a huge improv comedy scene - had a complete lack of a dedicated improv group. All comedy events on campus asked students to pay to attend, and everyone on campus was super depressed.</p>
+            <p>These freshmen boys decided to do something about it. They formed their own improv group and named it "BrainWreck Improv." They practiced for months and months, privately, honing their skills and talents. Then they decided it was time for the big show.</p>
+            <p>Just one year later, in 2007, they formed RIT Improv to serve as an "umbrella organization" that serves all improv groups on campus. As of 2011, RIT Improv consisted of BrainWreck Improv and The Improvessionals, as well as twice-weekly Improv Workshops that are free and open to the public. Every improv performance since the very first show has been free to attend!</p>
+        </div>
+
+        <div class="aboutSection">
+            <h2 class="aboutHeader">Contact</h2>
+            <p>Have a question for us? Maybe a cool event you would like to see us at? Fill out this nifty form and we'll get back to you as soon as we can.</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="contactName" placeholder="Name" size="50">
+                    <input type="email" class="form-control" id="contactEmail" placeholder="Email" size="50">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Enter message here..."></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </div>
