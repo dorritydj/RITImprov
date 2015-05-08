@@ -91,19 +91,47 @@ li.about.current, li.about > a:hover{
     font-size: 16px;
 }
 
-form{
+.aboutForm{
     padding-left: 1.5%;
 }
 
-input.form-control{
+.aboutForm > .form-group > input.form-control{
     width: 15%;
 }
 
-textarea.form-control{
+.aboutForm > .form-group > textarea.form-control{
     width: 25%;
 }
 
 /*Bios Page Styles*/
+.biosCarousel{
+}
+
+.bwSlide > h1, .impSlide > h1, .wipSlide > h1, .alSlide > h1{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: 0px 0px;
+    font-weight: bold;
+    color: white;
+}
+
+.bwSlide{
+    background-color: #4994CE;
+}
+
+.impSlide{
+    background-color: #6EBC42;
+}
+
+.wipSlide{
+    background-color: #DA2373;
+}
+
+.alSlide{
+    background-color: #F37E1F;
+}
 
 /*Events Page Styles*/
 
@@ -119,3 +147,27 @@ textarea.form-control{
 /*Improvamonium Page Styles*/
 
 /*Workshops Page Styles*/
+.workshopBox{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+.workshopHeader{
+    color: #6EBC42;
+    border-bottom: 2px solid #6EBC42;
+}
+
+.workshopSection > h2{
+    padding-bottom: .5%;
+}
+
+.workshopSection > p{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 16px;
+}
+
+.workshopSection > ul{
+    font-size: 16px;
+    list-style: none;
+}

@@ -2,6 +2,20 @@
 
 app.constant('eventInfo',[
     {
+        "name": "RIT Improv Shows You the Magic of Improvisation",
+        "date": "Saturday, May 2nd",
+        "time": "12PM",
+        "loc": "Ingle Auditorium",
+        "img": "imgs/events/imagineRITShow.png"
+    },
+    {
+        "name": "Workshopper Show",
+        "date": "Friday, May 1st",
+        "time": "8PM",
+        "loc": "Carlson Auditorium",
+        "img": "imgs/events/workshopperShow.png"
+    },
+    {
         "name": "Closing Mike Night",
         "date": "Saturday, April 25th",
         "time": "8PM",
