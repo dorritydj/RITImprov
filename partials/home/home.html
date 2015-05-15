@@ -12,11 +12,11 @@
         </ul>
     </div>
 
-    <carousel>
+    <carousel class="homeCarousel">
         <slide ng-repeat="slide in homeCtrl.slides | limitTo: 5">
             <img class="slidePic center-block" ng-src="{{slide.img}}">
             <h2>{{slide.name}}</h2>
-            <h4>{{slide.date}} at {{slide.time}}</h4>
+            <h4>{{slide.date}} at {{slide.time}} in {{slide.loc}}</h4>
         </slide>
     </carousel>
 

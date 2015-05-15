@@ -9,9 +9,10 @@ app.controller('troupeController', ['brainwreckInfo', function(brainwreckInfo){
     self.headshots = [];
 
     self.name = "";
-    self.bio = "";
-
     self.fullPic = "";
+    self.hometown = "";
+    self.troupes = "";
+    self.bio = "";
 
     self.clicked = false;
     self.clickPic = "";
@@ -27,9 +28,11 @@ app.controller('troupeController', ['brainwreckInfo', function(brainwreckInfo){
         for(var i = 0; i < brainwreckInfo.length; i++){
             if(brainwreckInfo[i].headshot == headshot){
                 self.name = brainwreckInfo[i].name;
-                self.bio = brainwreckInfo[i].bio;
-
+                self.hometown = brainwreckInfo[i].hometown;
+                self.troupes = brainwreckInfo[i].troupes;
                 self.fullPic = brainwreckInfo[i].fullPic;
+                console.log(self.fullPic);
+                self.bio = brainwreckInfo[i].bio;
             }
         }
 
@@ -41,27 +44,47 @@ app.controller('troupeController', ['brainwreckInfo', function(brainwreckInfo){
 //Starting troupe constants here
 app.constant('brainwreckInfo', [
     {
+        name: "Allie McClintock",
+        headshot: "imgs/bios/bw/head/pngs/aMcClintockHead_hannah.png",
+        fullPic: "imgs/bios/bw/body/pngs/aMcClintockBody_hannah.png",
+        hometown: "Hometown: Somewhere, Maine",
+        troupes: "(Love Phoenix 2013 - 2014, BrainWreck Improv 2014 - Present)",
+        bio: "Allie McClintock was born in a log cabin in the woods, on a cold Saturday evening. Her hobbies include sarcasm, moose riding, and devil worship."
+    },
+    {
+        name: "Colleen McMahon",
+        headshot: "imgs/bios/bw/head/pngs/cMcMahonHead_hannah.png",
+        fullPic: "",
+        bio: "Some bio here"
+    },
+    {
+        name: "Elijah Crocker",
+        headshot: "imgs/bios/bw/head/pngs/eCrockerHead_hannah.png",
+        fullPic: "",
+        bio: "Some bio here"
+    },
+    {
+        name: "Leslie Bowen",
+        headshot: "imgs/bios/bw/head/pngs/lBowenHead_hannah.png",
+        fullPic: "",
+        bio: "Some bio here"
+    },
+    {
+        name: "Lucas Jodon",
+        headshot: "imgs/bios/bw/head/pngs/lJodonHead_hannah.png",
+        fullPic: "",
+        bio: "Some bio here"
+    },
+    {
         name: "Nick Rabb",
-        headshot: "imgs/bios/brainwreck/headshot/aMcClintockHead_hannah.png",
-        fullPic: "imgs/bios/brainwreck/fullpic/lJodonBody_hannah.png",
+        headshot: "imgs/bios/bw/head/pngs/nRabbHead_hannah.png",
+        fullPic: "",
         bio: "Some bio here"
     },
     {
-        name: "fdsfds",
-        headshot: "imgs/bios/brainwreck/headshot/nRabbHead_hannah.png",
-        fullPic: "imgs/bios/brainwreck/fullpic/lJodonBody_hannah.png",
-        bio: "Some bio here"
-    },
-    {
-        name: "gfdgfdgf",
-        headshot: "imgs/bios/brainwreck/headshot/nRabbHead_hannah.png",
-        fullPic: "imgs/bios/brainwreck/fullpic/lJodonBody_hannah.png",
-        bio: "Some bio here"
-    },
-    {
-        name: "gfdhdfhfd",
-        headshot: "imgs/bios/brainwreck/headshot/nRabbHead_hannah.png",
-        fullPic: "imgs/bios/brainwreck/fullpic/lJodonBody_hannah.png",
+        name: "Tom Weekes",
+        headshot: "imgs/bios/bw/head/pngs/tWeekesHead_hannah.png",
+        fullPic: "",
         bio: "Some bio here"
     }
 ])

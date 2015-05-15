@@ -89,6 +89,10 @@ li.about.current, li.about > a:hover{
     height: 86.5vh;
 }
 
+.carousel-inner{
+    cursor: default;
+}
+
 /*About Page Styles*/
 .aboutBox{
     padding-left: 3.5%;
@@ -159,16 +163,25 @@ li.about.current, li.about > a:hover{
 }
 
 .memberBio{
+    margin-left: 2%;
+    margin-right: 2%;
     width: 25%;
     float: left;
     text-align: left;
 }
 
 .memberFull{
+    margin-left: 2%;
+    margin-right: 2%;
     width: 25%;
     float: left;
+    margin-top: 1%;
 }
 
+.memberBody{
+    width: 400px;
+    height: 400px;
+}
 
 .memberHead{
     display: inline-block;
@@ -180,6 +193,7 @@ li.about.current, li.about > a:hover{
 }
 
 .memberHead:hover{
+    cursor: pointer;
     opacity: 1;
     transition: 0.2s ease-in 0s;
 }
