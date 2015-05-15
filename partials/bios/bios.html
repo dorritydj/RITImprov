@@ -16,6 +16,10 @@
             <div ng-class="{bwSlide: troupe == 'BrainWreck Improv', impSlide: troupe == 'The Improvessionals', wipSlide: troupe == 'Work.In.Progess', alSlide: troupe == 'Alumnus'}">
                 <h1>{{troupe}}</h1>
             </div>
+
+            <div ng-if="troupe == 'BrainWreck Improv'">
+                <brain-wreck></brain-wreck>
+            </div>
         </slide>
     </carousel>
 </div>

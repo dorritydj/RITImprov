@@ -7,6 +7,7 @@ app.controller('biosController', ['img', 'icon', function (img, icon)
 
     self.img = img;
     self.icon = icon;
+    self.currTroupe = "";
 
     self.troupes = [];
 

@@ -70,6 +70,25 @@ li.about.current, li.about > a:hover{
     color: #F37E1F;
 }
 
+.carousel-indicators{
+    display: none;
+}
+
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+    color: #000000;
+    width: 10%;
+}
+
+.carousel-control.left:hover, .carousel-control.right:hover{
+    color: #000000;
+    transition: 0.2s ease-in 0s;
+}
+
+.carousel{
+    height: 86.5vh;
+}
+
 /*About Page Styles*/
 .aboutBox{
     padding-left: 3.5%;
@@ -131,6 +150,46 @@ li.about.current, li.about > a:hover{
 
 .alSlide{
     background-color: #F37E1F;
+}
+
+.troupeHead{
+    margin-left: 10%;
+    width: 25%;
+    float: left;
+}
+
+.memberBio{
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+.memberFull{
+    width: 25%;
+    float: left;
+}
+
+
+.memberHead{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    opacity: 0.5;
+    float: left;
+}
+
+.memberHead:hover{
+    opacity: 1;
+    transition: 0.2s ease-in 0s;
+}
+
+.memberHead.active{
+    opacity: 1;
+}
+
+.memberHead.active:hover{
+    cursor: default;
 }
 
 /*Events Page Styles*/

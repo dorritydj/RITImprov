@@ -2,6 +2,13 @@
 
 app.constant('eventInfo',[
     {
+        "name": "Tom Foolery",
+        "date": "Wednesday, May 13",
+        "time": "8PM",
+        "loc": "Webb Auditorium",
+        "img": "imgs/events/tomFooleryBW.png"
+    },
+    {
         "name": "RIT Improv Shows You the Magic of Improvisation",
         "date": "Saturday, May 2nd",
         "time": "12PM",
@@ -9,7 +16,7 @@ app.constant('eventInfo',[
         "img": "imgs/events/imagineRITShow.png"
     },
     {
-        "name": "Workshopper Show",
+        "name": "The Workshopper Show",
         "date": "Friday, May 1st",
         "time": "8PM",
         "loc": "Carlson Auditorium",

@@ -1,0 +1,15 @@
+<div ng-init="troupeCtrl.loadBrainWreck()">
+    <div class="troupeHead">
+        <div ng-repeat="pic in troupeCtrl.headshots track by $index">
+            <img class="memberHead" ng-class="{active: troupeCtrl.clicked == true && troupeCtrl.clickPic == pic}" ng-src="{{pic}}" ng-click="troupeCtrl.getInfoBW(pic)">
+        </div>
+    </div>
+
+    <div class="memberBio">
+        <h2>{{troupeCtrl.name}}</h2>
+    </div>
+
+    <div class="memberFull">
+
+    </div>
+</div>
