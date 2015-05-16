@@ -7,7 +7,7 @@ var app = angular.module('ritImprov');
 app.directive('brainWreck', function(){
     return {
         restrict: 'EA',
-        templateUrl: 'troupeHTML/brainwreck.html',
+        templateUrl: 'partials/bios/troupeHTML/brainwreck.html',
         controller: "troupeController as troupeCtrl"
     }
 })

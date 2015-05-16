@@ -11,7 +11,7 @@
         </ul>
     </div>
 
-    <carousel class="biosCarousel">
+    <carousel class="biosCarousel slide carousel-fade">
         <slide ng-repeat="troupe in biosCtrl.troupes">
             <div ng-class="{bwSlide: troupe == 'BrainWreck Improv', impSlide: troupe == 'The Improvessionals', wipSlide: troupe == 'Work.In.Progess', alSlide: troupe == 'Alumnus'}">
                 <h1>{{troupe}}</h1>

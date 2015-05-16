@@ -12,7 +12,7 @@
         </ul>
     </div>
 
-    <carousel class="homeCarousel">
+    <carousel class="homeCarousel slide carousel-fade">
         <slide ng-repeat="slide in homeCtrl.slides | limitTo: 5">
             <img class="slidePic center-block" ng-src="{{slide.img}}">
             <h2>{{slide.name}}</h2>
