@@ -23,8 +23,13 @@ app.controller('troupeController', ['brainwreckInfo', function(brainwreckInfo){
         }
     }
 
-    self.getInfoBW = function(headshot){
+    self.loadImprovessionals = function(){
+        for(var i = 0; i < brainwreckInfo.length; i++){
+            self.headshots.push(brainwreckInfo[i].headshot);
+        }
+    }
 
+    self.getInfoBW = function(headshot){
         for(var i = 0; i < brainwreckInfo.length; i++){
             if(brainwreckInfo[i].headshot == headshot){
                 self.name = brainwreckInfo[i].name;

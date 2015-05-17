@@ -229,6 +229,11 @@ li.about.current, li.about > a:hover{
     cursor: default;
 }
 
+.memInfoTran{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 /*Events Page Styles*/
 
 /*Home Page Styles*/
