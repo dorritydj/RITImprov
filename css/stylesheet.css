@@ -132,13 +132,7 @@ li.about.current, li.about > a:hover{
 }
 
 .aboutSection > p{
-    padding-left: 1.5%;
-    padding-right: 1.5%;
     font-size: 16px;
-}
-
-.aboutForm{
-    padding-left: 1.5%;
 }
 
 .aboutForm > .form-group > input.form-control{
@@ -235,6 +229,36 @@ li.about.current, li.about > a:hover{
 }
 
 /*Events Page Styles*/
+.eventBox{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+.eventSection > h2{
+    padding-bottom: .5%;
+}
+
+.eventSection > p{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 16px;
+}
+
+.eventHeader{
+    color: #4994CE;
+    border-bottom: 2px solid #4994CE;
+}
+
+.eventImg{
+    width: 40%;
+    height: 40%;
+}
+
+.eventDesc{
+    width: 50%;
+    margin-right: 10%;
+    float: left;
+}
 
 /*Home Page Styles*/
 .nav, .pagination, .carousel, .panel-title a {

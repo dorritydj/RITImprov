@@ -2,13 +2,28 @@
 <link view-head rel="shortcut icon" ng-href="{{eventsCtrl.icon}}" />
 
 <div>
-    <div>
-        <img ng-if="eventsCtrl.img != ''" ng-src="{{eventsCtrl.img}}" />
+    <div class="header">
+        <img class="picLogo" ng-if="eventsCtrl.img != ''" ng-src="{{eventsCtrl.img}}"/>
+        <ul class="nav">
+            <li ng-class="{current: eventsCtrl.img != '' && nav.name == 'events', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
+                <a ng-href="{{nav.link}}">{{nav.name}}</a>
+            </li>
+        </ul>
     </div>
 
-    <a ng-repeat="nav in appCtrl.nav" ng-href="{{nav.link}}">
-        <li>{{nav.name}}</li>
-    </a>
 
+    <div class="eventBox" ng-repeat="event in eventsCtrl.events">
+
+        <h2 class="eventHeader">{{event.name}}</h2>
+
+        <div class="eventSection">
+            <div class="eventDesc">
+                <h4 class="eventDate">{{event.date}} at {{event.time}} in {{event.loc}}</h4>
+                {{event.desc}}
+            </div>
+            <img class="eventImg" ng-src="{{event.img}}">
+        </div>
+
+    </div>
 
 </div>
