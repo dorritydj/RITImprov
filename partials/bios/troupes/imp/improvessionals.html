@@ -1,0 +1,25 @@
+<div ng-init="troupeCtrl.loadImprovessionals()">
+
+    <div class="troupeHead">
+        <div ng-repeat="pic in troupeCtrl.headshots track by $index">
+            <img class="memberHead" ng-class="{active: troupeCtrl.clicked == true && troupeCtrl.clickPic == pic}" ng-src="{{pic}}" ng-click="troupeCtrl.getInfoBW(pic)">
+        </div>
+    </div>
+
+    <div class="memberBio" ng-class="{memInfoTran: troupeCtrl.changed == true}">
+        <h2>{{troupeCtrl.name}}</h2>
+
+        <p>
+            {{troupeCtrl.hometown}}
+            <br>
+            {{troupeCtrl.troupes}}
+            <br>
+            <br>
+            {{troupeCtrl.bio}}
+        </p>
+    </div>
+
+    <div class="memberFull">
+        <img class="memberBody" ng-src="{{troupeCtrl.fullPic}}">
+    </div>
+</div>
