@@ -1,4 +1,4 @@
-﻿body {
+body {
     margin: 0;
     padding: 0;
     background-color: #EBECEE;
@@ -9,6 +9,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Formatting Styles */
+
+.row-offset-xs { margin-top: 5%; }
+.row-offset-sm { margin-top: 10%; }
+.row-offset-md { margin-top: 20%; }
+.row-offset-lg { margin-top: 40%; }
+
 
 .mainContainer {
     margin: auto;
