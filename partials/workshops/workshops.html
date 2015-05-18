@@ -5,7 +5,7 @@
     <div class="header">
         <img class="picLogo" ng-if="workshopCtrl.img != ''" ng-src="{{workshopCtrl.img}}"/>
         <ul class="nav">
-            <li ng-class="{current: workshopCtrl.img != '' && nav.name == 'workshop', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
+            <li ng-class="{current: workshopCtrl.img != '' && nav.name == 'workshops', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
                 <a ng-href="{{nav.link}}">{{nav.name}}</a>
             </li>
         </ul>

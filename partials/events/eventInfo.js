@@ -1,6 +1,6 @@
 ﻿var app = angular.module('ritImprov');
 
-app.constant('eventInfo',[
+app.value('eventInfo',[
     {
         name: "Tom Foolery",
         date: "Wednesday, May 13",
@@ -62,6 +62,6 @@ app.constant('eventInfo',[
         loc: "Webb Auditorium",
         img: "imgs/events/improvamonium2015.png",
         type: "improvamonium",
-        desc: "Improvamonium is Rochester's ONLY FREE improv comedy festival organized and run completely BY students! 7 years running, not only will you get to see all four of RIT's improv teams, but Improvamonium also features college and professional level teams from all over Upstate NY, from Fredonia to Oswego. It's an UNBELIEVABLE showcase that you do not want to miss! Each night, you'll be treated to a mix of college and professional teams that usually command paid admission. But here, at RIT, you'll get to laugh for 100% FREE!"
+        desc: "Improvamonium is Rochester's ONLY FREE improv comedy festival organized and run completely BY students! 7 years running, not only will you get to see all four of RIT's improv teams, but Improvamonium also features college and professional level teams from all over Upstate NY, from Fredonia to Oswego. It's an UNBELIEVABLE showcase that you do not want to miss!_ Each night, you'll be treated to a mix of college and professional teams that usually command paid admission. But here, at RIT, you'll get to laugh for 100% FREE!"
     }
 ])

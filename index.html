@@ -12,6 +12,7 @@
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-route.min.js"></script>
     <script src="scripts/angularjs-viewhead.js"></script>
+    <script src="scripts/angular-mocks.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/ui-bootstrap-tpls-0.12.1.min.js"></script>
     <script src="https://apis.google.com/js/client.js"></script>
@@ -47,7 +48,7 @@
     <script src="partials/events/eventInfo.js"></script>
 
 </head>
-<body ng-controller="appCtrl as appCtrl">
+<body ng-controller="appCtrl as appCtrl" ng-cloak>
 <div ng-view>
 </div>
 </body>

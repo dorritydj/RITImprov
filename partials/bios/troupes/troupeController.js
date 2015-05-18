@@ -17,26 +17,36 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
     self.clicked = false;
     self.clickPic = "";
 
+    self.brainwreck = [];
+    self.improvessionals = [];
+
+    self.init = function(){
+        self.brainwreck = brainwreckInfo;
+        self.improvessionals = improvessionals;
+    }
+
+    self.init();
+
     self.loadBrainWreck = function(){
-        for(var i = 0; i < brainwreckInfo.length; i++){
-            self.headshots.push(brainwreckInfo[i].headshot);
+        for(var i = 0; i < self.brainwreck.length; i++){
+            self.headshots.push(self.brainwreck[i].headshot);
         }
     }
 
     self.loadImprovessionals = function(){
-        for(var i = 0; i < improvessionals.length; i++){
-            self.headshots.push(improvessionals[i].headshot);
+        for(var i = 0; i < self.improvessionals.length; i++){
+            self.headshots.push(self.improvessionals[i].headshot);
         }
     }
 
     self.getInfoBW = function(headshot){
-        for(var i = 0; i < brainwreckInfo.length; i++){
-            if(brainwreckInfo[i].headshot == headshot){
-                self.name = brainwreckInfo[i].name;
-                self.hometown = brainwreckInfo[i].hometown;
-                self.troupes = brainwreckInfo[i].troupes;
-                self.fullPic = brainwreckInfo[i].fullPic;
-                self.bio = brainwreckInfo[i].bio;
+        for(var i = 0; i < self.brainwreck.length; i++){
+            if(self.brainwreck[i].headshot == headshot){
+                self.name = self.brainwreck[i].name;
+                self.hometown = self.brainwreck[i].hometown;
+                self.troupes = self.brainwreck[i].troupes;
+                self.fullPic = self.brainwreck[i].fullPic;
+                self.bio = self.brainwreck[i].bio;
             }
         }
 
@@ -45,13 +55,13 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
     }
 
     self.getInfoImp = function(headshot){
-        for(var i = 0; i < improvessionals.length; i++){
-            if(improvessionals[i].headshot == headshot){
-                self.name = improvessionals[i].name;
-                self.hometown = improvessionals[i].hometown;
-                self.troupes = improvessionals[i].troupes;
-                self.fullPic = improvessionals[i].fullPic;
-                self.bio = improvessionals[i].bio;
+        for(var i = 0; i < self.improvessionals.length; i++){
+            if(self.improvessionals[i].headshot == headshot){
+                self.name = self.improvessionals[i].name;
+                self.hometown = self.improvessionals[i].hometown;
+                self.troupes = self.improvessionals[i].troupes;
+                self.fullPic = self.improvessionals[i].fullPic;
+                self.bio = self.improvessionals[i].bio;
             }
         }
 
