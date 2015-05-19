@@ -1,6 +1,6 @@
-var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap', 'gapi']);
+var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap']);
 
-app.config(function($routeProvider) {
+app.config(["$routeProvider", function($routeProvider) {
     $routeProvider
         .when('/home', {
             templateUrl: 'partials/home/home.html',
@@ -117,5 +117,5 @@ app.config(function($routeProvider) {
             }
         })
         .otherwise('/home');
-});
+}]);
 

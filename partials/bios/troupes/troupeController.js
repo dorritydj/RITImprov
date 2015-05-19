@@ -23,7 +23,7 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
     self.init = function(){
         self.brainwreck = brainwreckInfo;
         self.improvessionals = improvessionals;
-    }
+    };
 
     self.init();
 
@@ -31,13 +31,13 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
         for(var i = 0; i < self.brainwreck.length; i++){
             self.headshots.push(self.brainwreck[i].headshot);
         }
-    }
+    };
 
     self.loadImprovessionals = function(){
         for(var i = 0; i < self.improvessionals.length; i++){
             self.headshots.push(self.improvessionals[i].headshot);
         }
-    }
+    };
 
     self.getInfoBW = function(headshot){
         for(var i = 0; i < self.brainwreck.length; i++){
@@ -52,7 +52,7 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
 
         self.clicked = true;
         self.clickPic = headshot;
-    }
+    };
 
     self.getInfoImp = function(headshot){
         for(var i = 0; i < self.improvessionals.length; i++){
@@ -67,5 +67,5 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
 
         self.clicked = true;
         self.clickPic = headshot;
-    }
-}])
+    };
+}]);

@@ -1,10 +1,10 @@
-﻿var app = angular.module('ritImprov');
+var app = angular.module('ritImprov');
 
-app.controller('homeController', ['img', 'icon', 'eventInfo', 'calId', 'Calendar', 'GAPI', function (img, icon, eventInfo, calId, Calendar, GAPI){
+app.controller('homeController', ['img', 'icon', 'eventInfo', function (img, icon, eventInfo){
 
     var self = this;
 
-    self.cal = calId;
+    //self.cal = calId;
     self.img = img;
     self.icon = icon;
     self.slides = [];

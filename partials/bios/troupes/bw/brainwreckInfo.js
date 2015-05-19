@@ -60,4 +60,4 @@ app.constant('brainwreckInfo', [
         troupes: "(Work In Progress 2012 - 2013, BrainWreck Improv 2013 - Present)",
         bio: "Tom is a 4th year New Media Marketing student he has served 2 years on BrainWreck Improv. He also is the president of RIT Players, the student-run theater club at RIT. They say if you stand in front of a bathroom mirror with the lights off and say his name 3 times, you will hear the theme song of 'Friends' faintly in the distance. "
     }
-])
+]);

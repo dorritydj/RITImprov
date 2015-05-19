@@ -1,4 +1,4 @@
-﻿var app = angular.module('ritImprov');
+var app = angular.module('ritImprov');
 
 app.constant('navLinks', [
     {
@@ -25,4 +25,4 @@ app.constant('navLinks', [
         "name": "about",
         "link": "#/about",
     }
-])
+]);

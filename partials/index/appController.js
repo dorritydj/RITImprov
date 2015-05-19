@@ -1,4 +1,4 @@
-﻿var app = angular.module('ritImprov');
+var app = angular.module('ritImprov');
 
 app.controller('appCtrl', ['navLinks',
     function (navLinks){
@@ -8,7 +8,7 @@ app.controller('appCtrl', ['navLinks',
 
         self.init = function(){
             self.nav = navLinks;
-        }
+        };
 
         self.init();
-    }])
+    }]);

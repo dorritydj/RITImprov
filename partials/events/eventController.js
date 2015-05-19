@@ -1,4 +1,4 @@
-﻿var app = angular.module('ritImprov');
+var app = angular.module('ritImprov');
 
 app.controller('eventsController', ['img', 'icon', 'eventInfo', function (img, icon, eventInfo)
 {
@@ -11,8 +11,8 @@ app.controller('eventsController', ['img', 'icon', 'eventInfo', function (img, i
     self.events = [];
 
     self.init = function(){
-        self.events = eventInfo
-    }
+        self.events = eventInfo;
+    };
 
     self.init();
-}])
+}]);

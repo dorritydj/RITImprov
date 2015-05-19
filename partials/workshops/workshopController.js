@@ -1,4 +1,4 @@
-﻿var app = angular.module('ritImprov');
+var app = angular.module('ritImprov');
 
 app.controller('workshopController', ['img', 'icon', function (img, icon){
 
@@ -6,4 +6,4 @@ app.controller('workshopController', ['img', 'icon', function (img, icon){
 
     self.img = img;
     self.icon = icon;
-}])
+}]);

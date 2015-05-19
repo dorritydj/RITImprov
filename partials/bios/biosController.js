@@ -1,4 +1,4 @@
-﻿var app = angular.module('ritImprov');
+var app = angular.module('ritImprov');
 
 app.controller('biosController', ['img', 'icon', function (img, icon)
 {
@@ -16,8 +16,8 @@ app.controller('biosController', ['img', 'icon', function (img, icon)
             "The Improvessionals",
             "Work.In.Progess",
             "Alumnus"
-        ]
-    }
+        ];
+    };
 
     self.init();
-}])
+}]);
