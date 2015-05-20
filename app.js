@@ -6,11 +6,6 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: 'partials/home/home.html',
             controller: 'homeController as homeCtrl',
             resolve: {
-                img: ['$timeout', function($timeout) {
-                    return $timeout(function() {
-                        return "imgs/logos/logoBlue.png";
-                    }, 500);
-                }],
                 icon: ['$timeout', function($timeout) {
                     return $timeout(function() {
                         return "imgs/favicons/DuckBlue.ico";
@@ -22,13 +17,6 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: 'partials/about/about.html',
             controller: 'aboutController as aboutCtrl',
             resolve: {
-                img: ['$timeout', function ($timeout)
-                {
-                    return $timeout(function ()
-                    {
-                        return "imgs/logos/logoOrange.png";
-                    }, 500);
-                }],
                 icon: ['$timeout', function ($timeout)
                 {
                     return $timeout(function ()
@@ -62,13 +50,6 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: 'partials/events/events.html',
             controller: 'eventsController as eventsCtrl',
             resolve: {
-                img: ['$timeout', function ($timeout)
-                {
-                    return $timeout(function ()
-                    {
-                        return "imgs/logos/logoBlue.png";
-                    }, 500);
-                }],
                 icon: ['$timeout', function ($timeout)
                 {
                     return $timeout(function ()
@@ -82,13 +63,6 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: 'partials/improvamonium/improvamonium.html',
             controller: 'improvController as improvCtrl',
             resolve: {
-                img: ['$timeout', function ($timeout)
-                {
-                    return $timeout(function ()
-                    {
-                        return "imgs/logos/logoBlue.png";
-                    }, 500);
-                }],
                 icon: ['$timeout', function ($timeout)
                 {
                     return $timeout(function ()
@@ -102,11 +76,6 @@ app.config(["$routeProvider", function($routeProvider) {
             templateUrl: 'partials/workshops/workshops.html',
             controller: 'workshopController as workshopCtrl',
             resolve: {
-                img: ['$timeout', function($timeout) {
-                    return $timeout(function() {
-                        return "imgs/logos/logoGreen.png";
-                    }, 500);
-                }],
                 icon: ['$timeout', function ($timeout)
                 {
                     return $timeout(function ()

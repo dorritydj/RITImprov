@@ -2,14 +2,7 @@
 <link view-head rel="shortcut icon" ng-href="{{biosCtrl.icon}}" />
 
 <div>
-    <div class="header">
-        <img class="picLogo" ng-if="biosCtrl.img != ''" ng-src="{{biosCtrl.img}}"/>
-        <ul class="nav">
-            <li ng-class="{current: biosCtrl.img != '' && nav.name == 'bios', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
-                <a ng-href="{{nav.link}}">{{nav.name}}</a>
-            </li>
-        </ul>
-    </div>
+    <menu-bar page="bios"></menu-bar>
 
     <carousel class="biosCarousel slide carousel-fade">
         <slide ng-repeat="troupe in biosCtrl.troupes">

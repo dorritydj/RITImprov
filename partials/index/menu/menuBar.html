@@ -1,0 +1,9 @@
+<div class="header">
+    <img ng-cloak class="picLogo" ng-src="{{menuCtrl.getImg()}}">
+
+    <ul class="nav">
+        <li ng-repeat="nav in menuCtrl.nav" ng-class="{current: nav.curr == true, home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}">
+            <a ng-href="{{nav.link}}">{{nav.name}}</a>
+        </li>
+    </ul>
+</div>

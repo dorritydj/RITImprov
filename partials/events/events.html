@@ -2,14 +2,7 @@
 <link view-head rel="shortcut icon" ng-href="{{eventsCtrl.icon}}" />
 
 <div>
-    <div class="header">
-        <img class="picLogo" ng-if="eventsCtrl.img != ''" ng-src="{{eventsCtrl.img}}"/>
-        <ul class="nav">
-            <li ng-class="{current: eventsCtrl.img != '' && nav.name == 'events', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
-                <a ng-href="{{nav.link}}">{{nav.name}}</a>
-            </li>
-        </ul>
-    </div>
+    <menu-bar page="events"></menu-bar>
 
     <div class="eventBox" ng-repeat="event in eventsCtrl.events">
         <div class="row row-offset-xs">

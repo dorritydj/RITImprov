@@ -3,14 +3,7 @@
 
 <div>
 
-    <div class="header">
-        <img class="picLogo" ng-if="homeCtrl.img != ''" ng-src="{{homeCtrl.img}}"/>
-        <ul class="nav">
-            <li ng-class="{current: homeCtrl.img != '' && nav.name == 'home', home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}" ng-repeat="nav in appCtrl.nav">
-                <a ng-href="{{nav.link}}">{{nav.name}}</a>
-            </li>
-        </ul>
-    </div>
+    <menu-bar page="home"></menu-bar>
 
     <carousel class="homeCarousel slide carousel-fade">
         <slide ng-repeat="slide in homeCtrl.slides | limitTo: 5" ng-if="slide.type == 'mainstage'">

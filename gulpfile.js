@@ -66,14 +66,16 @@ var angular = [
     'partials/workshops/workshopController.js',
     'partials/about/aboutController.js',
     'partials/bios/biosController.js',
-    'partials/bios/biosController.js',
+    'partials/bios/biosDirectives.js',
     'partials/bios/troupes/troupeController.js',
     'partials/bios/troupes/bw/brainwreckInfo.js',
     'partials/bios/troupes/imp/improvessionalsInfo.js',
     'partials/events/eventController.js',
     'partials/improvamonium/improvController.js',
     'partials/home/gCalendar.js',
-    'partials/index/navLinks.js',
+    'partials/index/menu/navLinks.js',
+    'partials/index/menu/menuController.js',
+    'partials/index/menu/menuDirective.js',
     'partials/events/eventInfo.js'
 ];
 

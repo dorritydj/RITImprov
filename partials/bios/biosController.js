@@ -1,11 +1,10 @@
 var app = angular.module('ritImprov');
 
-app.controller('biosController', ['img', 'icon', function (img, icon)
+app.controller('biosController', ['icon', function (icon)
 {
 
     var self = this;
 
-    self.img = img;
     self.icon = icon;
 
     self.troupes = [];
