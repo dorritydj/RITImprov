@@ -68,6 +68,7 @@ var angular = [
     'partials/bios/biosController.js',
     'partials/bios/biosDirectives.js',
     'partials/bios/troupes/troupeController.js',
+    'partials/bios/troupes/troupeDirective.js',
     'partials/bios/troupes/bw/brainwreckInfo.js',
     'partials/bios/troupes/imp/improvessionalsInfo.js',
     'partials/events/eventController.js',

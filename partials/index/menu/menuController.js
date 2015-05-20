@@ -14,7 +14,6 @@ app.controller('menuController', ['navLinks', function(navLinks){
 
         for(var i = 0; i < self.nav.length; i++){
             if(self.nav[i].curr == true){
-                console.log(self.nav[i].img);
                 tempimg = self.nav[i].img;
             }
         }

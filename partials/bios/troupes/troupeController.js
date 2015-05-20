@@ -17,55 +17,36 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
     self.clicked = false;
     self.clickPic = "";
 
-    self.brainwreck = [];
-    self.improvessionals = [];
+    self.troupe = [];
 
-    self.init = function(){
-        self.brainwreck = brainwreckInfo;
-        self.improvessionals = improvessionals;
-    };
-
-    self.init();
-
-    self.loadBrainWreck = function(){
-        for(var i = 0; i < self.brainwreck.length; i++){
-            self.headshots.push(self.brainwreck[i].headshot);
+    self.setTroupe = function(troupe){
+        if(troupe == 'BrainWreck Improv'){
+            self.troupe = brainwreckInfo;
+            self.loadTroupe();
+        }else if(troupe == 'The Improvessionals'){
+            self.troupe = improvessionals;
+            self.loadTroupe();
         }
     };
 
-    self.loadImprovessionals = function(){
-        for(var i = 0; i < self.improvessionals.length; i++){
-            self.headshots.push(self.improvessionals[i].headshot);
+    self.loadTroupe = function(){
+        for(var i = 0; i < self.troupe.length; i++){
+            self.headshots.push(self.troupe[i].headshot)
         }
     };
 
-    self.getInfoBW = function(headshot){
-        for(var i = 0; i < self.brainwreck.length; i++){
-            if(self.brainwreck[i].headshot == headshot){
-                self.name = self.brainwreck[i].name;
-                self.hometown = self.brainwreck[i].hometown;
-                self.troupes = self.brainwreck[i].troupes;
-                self.fullPic = self.brainwreck[i].fullPic;
-                self.bio = self.brainwreck[i].bio;
+    self.getInfo = function(pic){
+        for(var i = 0; i < self.troupe.length; i++){
+            if(self.troupe[i].headshot == pic){
+                self.name = self.troupe[i].name;
+                self.hometown = self.troupe[i].hometown;
+                self.troupes = self.troupe[i].troupes;
+                self.fullPic = self.troupe[i].fullPic;
+                self.bio = self.troupe[i].bio;
             }
         }
 
         self.clicked = true;
-        self.clickPic = headshot;
-    };
-
-    self.getInfoImp = function(headshot){
-        for(var i = 0; i < self.improvessionals.length; i++){
-            if(self.improvessionals[i].headshot == headshot){
-                self.name = self.improvessionals[i].name;
-                self.hometown = self.improvessionals[i].hometown;
-                self.troupes = self.improvessionals[i].troupes;
-                self.fullPic = self.improvessionals[i].fullPic;
-                self.bio = self.improvessionals[i].bio;
-            }
-        }
-
-        self.clicked = true;
-        self.clickPic = headshot;
+        self.clickPic = pic;
     };
 }]);

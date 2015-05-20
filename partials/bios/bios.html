@@ -10,13 +10,7 @@
                 <h1>{{troupe}}</h1>
             </div>
 
-            <div ng-if="troupe == 'BrainWreck Improv'">
-                <brain-wreck></brain-wreck>
-            </div>
-
-            <div ng-if="troupe == 'The Improvessionals'">
-                <improvessionals></improvessionals>
-            </div>
+            <troupe-display troupe="{{troupe}}"></troupe-display>
         </slide>
     </carousel>
 </div>
