@@ -7,18 +7,20 @@ app.controller('menuController', ['navLinks', function(navLinks){
     var self = this;
 
     self.nav = navLinks;
+    self.curr = "";
     self.img = "";
 
     self.getImg = function(){
         var tempimg = '';
 
         for(var i = 0; i < self.nav.length; i++){
-            if(self.nav[i].curr == true){
+            if(self.nav[i].curr === true){
                 tempimg = self.nav[i].img;
+                self.curr = self.nav[i].name;
             }
         }
 
         return tempimg;
-    }
+    };
 
 }]);

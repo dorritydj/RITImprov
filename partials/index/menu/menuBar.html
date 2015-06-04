@@ -1,9 +1,26 @@
 <div class="header">
-    <img ng-cloak class="picLogo" ng-src="{{menuCtrl.getImg()}}">
+    <img ng-cloak class="picLogo img-responsive" ng-src="{{menuCtrl.getImg()}}">
+
+    <button class="btn btn-primary btn-sm" ng-class="{aboutLoginBut: menuCtrl.curr == 'about', homeLoginBut: menuCtrl.curr == 'home', biosLoginBut: menuCtrl.curr == 'bios', workLoginBut: menuCtrl.curr == 'workshops', eventsLoginBut: menuCtrl.curr == 'events'}">
+        <i class="fa fa-bars"></i>
+    </button>
 
     <ul class="nav">
         <li ng-repeat="nav in menuCtrl.nav" ng-class="{current: nav.curr == true, home: nav.name == 'home', bios: nav.name == 'bios', workshops: nav.name == 'workshops', events: nav.name == 'events', improv: nav.name == 'improvamonium', about: nav.name == 'about'}">
             <a ng-href="{{nav.link}}">{{nav.name}}</a>
+        </li>
+
+
+        <!-- TODO: Use PHP as a RESTfull service, and from there, redirect the user to some sort of admin access only page. Need to find some way to prevent anyone from accessing those pages through browser/url shenanigans
+
+         TODO: Turn dis shit into a modal or something-->
+
+        <li class="loginForm">
+            <form class="form-inline ">
+                <input type="text" class="form-control loginInput" placeholder="Username">
+                <input type="password" class="form-control loginInput" placeholder="Password">
+                <button type="submit" class="btn btn-default">Login</button>
+            </form>
         </li>
     </ul>
 </div>

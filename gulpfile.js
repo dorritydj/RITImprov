@@ -47,6 +47,15 @@ gulp.task('lint', function(){
     });
 });
 
+var karma = require('karma').server;
+
+gulp.task('karma', function(done){
+    karma.start({
+        configFile: __dirname + "/tests/karma.conf.js",
+        singleRun: true
+    }, done)
+});
+
 var libs = [
     'scripts/angular.min.js',
     'scripts/angular-route.min.js',
@@ -82,5 +91,23 @@ var angular = [
 
 var css = [
     'css/bootstrap.min.css',
-    'css/stylesheet.css'
+    'css/stylesheet.css',
+    'css/navMedia.css',
+    'css/font-awesome.min.css'
 ];
+
+var specs = [
+    'scripts/angular.min.js',
+    'scripts/angular-route.min.js',
+    'scripts/angularjs-viewhead.js',
+    'scripts/angular-mocks.js',
+    'scripts/jquery-2.1.3.min.js',
+    'scripts/bootstrap.min.js',
+    'scripts/ui-bootstrap-tpls-0.12.1.min.js',
+    'tests/spec/aboutSpec.js',
+    'tests/spec/bioSpec.js',
+    'tests/spec/eventSpec.js',
+    'tests/spec/homeSpec.js',
+    'tests/spec/troupeSpec.js',
+    'tests/spec/workshopSpec.js'
+]

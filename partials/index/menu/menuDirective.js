@@ -14,10 +14,10 @@ app.directive('menuBar', ['navLinks', function(navLinks){
             for(var i = 0; i < navLinks.length; i++){
                 if(navLinks[i].name == attr.page){
                     navLinks[i].curr = true;
-                }else if(navLinks[i].name != attr.page && navLinks[i].curr == true){
+                }else if(navLinks[i].name != attr.page && navLinks[i].curr === true){
                     navLinks[i].curr = false;
                 }
             }
         }
-    }
+    };
 }]);

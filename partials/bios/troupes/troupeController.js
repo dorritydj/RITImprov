@@ -31,7 +31,7 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
 
     self.loadTroupe = function(){
         for(var i = 0; i < self.troupe.length; i++){
-            self.headshots.push(self.troupe[i].headshot)
+            self.headshots.push(self.troupe[i].headshot);
         }
     };
 

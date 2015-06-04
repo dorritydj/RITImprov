@@ -12,10 +12,14 @@
     "gulp": "^3.8.11",
     "gulp-inject": "^1.2.0",
     "gulp-install": "^0.4.0",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-jasmine-browser": "^0.1.0",
     "gulp-jshint": "^1.10.0",
+    "gulp-karma": "0.0.4",
     "gulp-load-plugins": "^0.10.0",
     "gulp-ng-annotate": "^0.5.3",
     "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.4",
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.12",
@@ -30,7 +34,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "ws"
+    "start": "ws"
   },
   "license": "ISC"
 }

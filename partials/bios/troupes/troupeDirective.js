@@ -14,5 +14,5 @@ app.directive('troupeDisplay', function(){
             console.log(ctrl);
             ctrl.setTroupe(attr.troupe);
         }
-    }
+    };
 });

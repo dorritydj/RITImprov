@@ -1,0 +1,81 @@
+@media (max-width: 1256px) {
+     input.form-control.loginInput{
+        display: none;
+     }
+}
+
+@media (max-width: 766px){
+    ul.nav{
+        display: none;
+    }
+
+    .btn-primary i.fa-bars{
+        display: block;
+        color: white;
+        font-size: 110%;
+    }
+
+    .aboutLoginBut.btn-primary, .homeLoginBut.btn-primary, .biosLoginBut.btn-primary, .workLoginBut.btn-primary, .eventsLoginBut.btn-primary{
+        float: right;
+        display: block;
+        color: white;
+        font-size: 110%;
+    }
+
+    /*
+    TODO: Set hover color, then color for every other possible option
+
+    Brightness is set to 58 added to original color
+
+    */
+    .homeLoginBut{
+        background: #4994CE;
+        border: 1px solid #4994CE;
+    }
+    
+    .homeLoginBut:hover{
+        background: #415B94;
+        border: 1px solid #415B94;
+    }
+
+    .biosLoginBut {
+        background: #DA2373;
+        border: 1px solid #DA2373;
+    }
+
+    .biosLoginBut:hover{
+        background: #A01A56;
+        border: 1px solid #A01A56;
+    }
+
+    .workLoginBut{
+        background: #6EBC42;
+        border: 1px solid #6EBC42;
+    }
+
+    .workLoginBut:hover{
+        background: #4D8129;
+        border: 1px solid #4D8129;
+    }
+
+    .eventsLoginBut{
+        background: #4994CE;
+        border: 1px solid #4994CE;
+    }
+
+    .eventsLoginBut:hover{
+        background: #415B94;
+        border: 1px solid #415B94;
+    }
+
+
+    .aboutLoginBut{
+        background-color: #F37E1F;
+        border: 1px solid #F37E1F;
+    }
+
+    .aboutLoginBut:hover{
+        background-color: #B9621D;
+        border: 1px solid #B9621D;
+    }
+}

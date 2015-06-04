@@ -12,11 +12,9 @@ a {
 
 /* Formatting Styles */
 
-.row-offset-xs { margin-top: 5%; }
 .row-offset-sm { margin-top: 10%; }
 .row-offset-md { margin-top: 20%; }
 .row-offset-lg { margin-top: 40%; }
-
 
 .mainContainer {
     margin: auto;
@@ -27,12 +25,11 @@ a {
 .header {
     background-color: #232323;
     padding: 1.5% 3.5% .5%;
-    max-height: 20vh;
+    overflow: hidden;
 }
 
 .picLogo {
-    width: 25%;
-    height: 25%;
+    max-width: 25%;
     float: left;
     margin-top: -2.4%;
     margin-left: -1.8%;
@@ -46,12 +43,16 @@ a {
     margin-top: .45em;
     font-family: sans-serif;
     color: #EBECEE;
-    font-size: 150%;
+    font-size: 110%;
 }
 
 /*Navigation Styles*/
 .nav li > a:hover, .nav li > a:focus {
     background-color: #232323;
+}
+
+.nav > li > a {
+    padding: 7px 5px;
 }
 
 li.home.current, li.home > a:hover {
@@ -99,6 +100,15 @@ li.about.current, li.about > a:hover{
 
 .carousel-inner{
     cursor: default;
+}
+
+ul > li.loginForm{
+    float: right;
+    margin-right: 0px;
+}
+
+.btn-primary i.fa-bars, .homeLoginBut, .biosLoginBut, .workLoginBut, .eventsLoginBut, .impLoginBut, .aboutLoginBut {
+    display: none;
 }
 
 /*Converting Slide Transition to Fad*/
@@ -156,7 +166,7 @@ li.about.current, li.about > a:hover{
 }
 
 .bwSlide > h1, .impSlide > h1, .wipSlide > h1, .alSlide > h1{
-    font-size: 80px;
+    font-size: 300%;
     text-align: center;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -206,6 +216,7 @@ li.about.current, li.about > a:hover{
 .memberBody{
     width: 80%;
     height: 80%;
+    margin-top: 7px;
 }
 
 .memberHead{
