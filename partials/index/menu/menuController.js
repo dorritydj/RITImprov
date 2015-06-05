@@ -9,6 +9,7 @@ app.controller('menuController', ['navLinks', function(navLinks){
     self.nav = navLinks;
     self.curr = "";
     self.img = "";
+    self.openMenu = true;
 
     self.getImg = function(){
         var tempimg = '';
@@ -22,5 +23,10 @@ app.controller('menuController', ['navLinks', function(navLinks){
 
         return tempimg;
     };
+
+    self.changeMenu = function(){
+        console.log('hit');
+        self.openMenu = !self.openMenu;
+    }
 
 }]);

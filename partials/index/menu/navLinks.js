@@ -25,12 +25,12 @@ app.constant('navLinks', [
         img: "imgs/logos/logoBlue.png",
         curr: false
     },
-    {
+    /*{
         "name": "improvamonium",
         "link": "#/improvamonium",
         img: "imgs/logos/logoBlue.png",
         curr: false
-    },
+    },*/
     {
         "name": "about",
         "link": "#/about",

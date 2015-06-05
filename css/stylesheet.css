@@ -279,6 +279,11 @@ ul > li.loginForm{
     float: left;
 }
 
+.btn-info{
+    background-color: #4994CE;
+    border: 1px solid #4994CE;
+}
+
 /*Home Page Styles*/
 .nav, .pagination, .carousel, .panel-title a {
     cursor: pointer;

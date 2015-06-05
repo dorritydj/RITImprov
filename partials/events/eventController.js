@@ -1,6 +1,6 @@
 var app = angular.module('ritImprov');
 
-app.controller('eventsController', ['icon', 'eventInfo', function (icon, eventInfo)
+app.controller('eventsController', ['icon', 'eventInfo', '$window', function (icon, eventInfo, $window)
 {
 
     var self = this;
@@ -12,6 +12,10 @@ app.controller('eventsController', ['icon', 'eventInfo', function (icon, eventIn
     self.init = function(){
         self.events = eventInfo;
     };
+
+    self.openPage = function(link){
+        $window.open(link);
+    }
 
     self.init();
 }]);

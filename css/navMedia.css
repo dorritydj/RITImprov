@@ -5,8 +5,23 @@
 }
 
 @media (max-width: 766px){
-    ul.nav{
-        display: none;
+    .closeMenu{
+        height: 0px;
+        opacity: 0;
+        transition: max-height .2s ease-in-out;
+        overflow-y: hidden;
+
+    }
+
+    .openMenu{
+        max-height: 150px;
+        display: inline;
+        opacity: 1;
+        text-align: right;
+    }
+
+    ul.nav li{
+        width: 100%;
     }
 
     .btn-primary i.fa-bars{
@@ -15,7 +30,7 @@
         font-size: 110%;
     }
 
-    .aboutLoginBut.btn-primary, .homeLoginBut.btn-primary, .biosLoginBut.btn-primary, .workLoginBut.btn-primary, .eventsLoginBut.btn-primary{
+    .aboutLoginBut.btn-primary, .homeLoginBut.btn-primary, .biosLoginBut.btn-primary, .workLoginBut.btn-primary, .eventsLoginBut.btn-primary, .impLoginBut.btn-primary{
         float: right;
         display: block;
         color: white;
@@ -59,11 +74,21 @@
     }
 
     .eventsLoginBut{
+         background: #4994CE;
+         border: 1px solid #4994CE;
+     }
+
+    .eventsLoginBut:hover{
+        background: #415B94;
+        border: 1px solid #415B94;
+    }
+
+    .impLoginBut{
         background: #4994CE;
         border: 1px solid #4994CE;
     }
 
-    .eventsLoginBut:hover{
+    .impLoginBut:hover{
         background: #415B94;
         border: 1px solid #415B94;
     }
