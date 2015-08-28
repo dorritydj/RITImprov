@@ -14,7 +14,7 @@
 
                 <h4 class="eventDate">{{event.date}} at {{event.time}} in {{event.loc}}</h4>
                 <p>{{event.desc}}</p>
-                <button class="btn btn-info" ng-click="eventsCtrl.openPage(event.link)">More...</button>
+                <button class="btn btn-info" ng-if="eventsCtrl.link != ''" ng-click="eventsCtrl.openPage(event.link)">More...</button>
 
                 <button class="btn btn-info" ng-if="event.vid != '' && event.vid !== undefined" ng-click="eventsCtrl.openPage(event.vid)">Watch</button>
                 <button class="btn btn-info" ng-if="event.vid1 != '' && event.vid1 !== undefined" ng-click="eventsCtrl.openPage(event.vid1)">Part 1</button>

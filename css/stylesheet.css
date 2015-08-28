@@ -68,7 +68,7 @@ li.workshops.current, li.workshops > a:hover{
 }
 
 li.events.current, li.events > a:hover{
-    color: #4994CE;
+    color: #F37E1F;
 }
 
 li.improv.current, li.improv > a:hover{
@@ -76,7 +76,7 @@ li.improv.current, li.improv > a:hover{
 }
 
 li.about.current, li.about > a:hover{
-    color: #F37E1F;
+    color: #4994CE;
 }
 
 .carousel-indicators{
@@ -141,8 +141,8 @@ ul > li.loginForm{
 }
 
 .aboutHeader{
-    color: #F37E1F;
-    border-bottom: 2px solid #F37E1F;
+    color: #4994CE;
+    border-bottom: 2px solid #4994CE;
 }
 
 .aboutSection > h2{
@@ -264,8 +264,8 @@ ul > li.loginForm{
 }
 
 .eventHeader{
-    color: #4994CE;
-    border-bottom: 2px solid #4994CE;
+    color: #F37E1F;
+    border-bottom: 2px solid #F37E1F;
 }
 
 .eventImg{
@@ -280,8 +280,13 @@ ul > li.loginForm{
 }
 
 .btn-info{
-    background-color: #4994CE;
-    border: 1px solid #4994CE;
+    background-color: #F37E1F;
+    border: 1px solid #F37E1F;
+}
+
+.btn-info:hover{
+    background: #B9621D;
+    border: 1px solid #B9621D;
 }
 
 /*Home Page Styles*/
@@ -291,6 +296,10 @@ ul > li.loginForm{
 
 .slidePic {
     max-height: 100vh;
+}
+
+.date-controls{
+    display: none;
 }
 
 /*Improvamonium Page Styles*/

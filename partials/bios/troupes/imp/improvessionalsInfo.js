@@ -3,7 +3,7 @@
  */
 var app = angular.module('ritImprov');
 
-app.value('improvessionals', [
+app.value('improvessionalsInfo', [
     {
         name: "Andrew Ahlquist",
         headshot: "",

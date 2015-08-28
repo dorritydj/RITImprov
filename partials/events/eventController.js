@@ -15,7 +15,7 @@ app.controller('eventsController', ['icon', 'eventInfo', '$window', function (ic
 
     self.openPage = function(link){
         $window.open(link);
-    }
+    };
 
     self.init();
 }]);

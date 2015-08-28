@@ -57,15 +57,19 @@ gulp.task('karma', function(done){
 });
 
 var libs = [
+    'scripts/jquery-2.1.3.min.js',
+    'scripts/jquery-ui.min.js',
+    'scripts/moment.js',
     'scripts/angular.min.js',
     'scripts/angular-route.min.js',
     'scripts/angularjs-viewhead.js',
     'scripts/angular-mocks.js',
-    'scripts/jquery-2.1.3.min.js',
     'scripts/bootstrap.min.js',
     'scripts/ui-bootstrap-tpls-0.12.1.min.js',
-    'https://apis.google.com/js/client.js',
-    'scripts/gapi.js'
+    'scripts/calendar.js',
+    'scripts/fullcalendar.min.js',
+    'scripts/xml2json.min.js',
+    'scripts/angular-xml.min.js'
 ];
 
 var angular = [
@@ -82,7 +86,9 @@ var angular = [
     'partials/bios/troupes/imp/improvessionalsInfo.js',
     'partials/events/eventController.js',
     'partials/improvamonium/improvController.js',
-    'partials/home/gCalendar.js',
+    'partials/home/calendar/gCalendar.js',
+    'partials/home/calendar/calendarController.js',
+    'partials/home/calendar/xmlConfig.js',
     'partials/index/menu/navLinks.js',
     'partials/index/menu/menuController.js',
     'partials/index/menu/menuDirective.js',
@@ -93,7 +99,8 @@ var css = [
     'css/bootstrap.min.css',
     'css/stylesheet.css',
     'css/navMedia.css',
-    'css/font-awesome.min.css'
+    'css/font-awesome.min.css',
+    'css/fullcalendar.css'
 ];
 
 var specs = [

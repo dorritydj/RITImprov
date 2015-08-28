@@ -3,7 +3,7 @@
  */
 var app = angular.module('ritImprov');
 
-app.controller('menuController', ['navLinks', function(navLinks){
+app.controller('menuController', ['navLinks', '$location', function(navLinks, $location){
     var self = this;
 
     self.nav = navLinks;
@@ -27,6 +27,5 @@ app.controller('menuController', ['navLinks', function(navLinks){
     self.changeMenu = function(){
         console.log('hit');
         self.openMenu = !self.openMenu;
-    }
-
+    };
 }]);

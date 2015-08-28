@@ -3,7 +3,7 @@
  */
 var app = angular.module("ritImprov");
 
-app.controller('troupeController', ['brainwreckInfo', 'improvessionals', function(brainwreckInfo, improvessionals){
+app.controller('troupeController', ['brainwreckInfo', 'improvessionalsInfo', function(brainwreckInfo, improvessionalsInfo){
     var self = this;
 
     self.headshots = [];
@@ -22,11 +22,10 @@ app.controller('troupeController', ['brainwreckInfo', 'improvessionals', functio
     self.setTroupe = function(troupe){
         if(troupe == 'BrainWreck Improv'){
             self.troupe = brainwreckInfo;
-            self.loadTroupe();
         }else if(troupe == 'The Improvessionals'){
-            self.troupe = improvessionals;
-            self.loadTroupe();
+            self.troupe = improvessionalsInfo;
         }
+        self.loadTroupe();
     };
 
     self.loadTroupe = function(){
