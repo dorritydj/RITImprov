@@ -11,7 +11,7 @@ app.value('GoogleApp', {
     apiKey: 'AIzaSyBGLfz9xRXb2EE2Br4wxI6NyPaiROxfdEE',
     clientId: '1017262984630-be3saadradol222b5vv0j3apbbo0odsk.apps.googleusercontent.com',
     scopes:[
-        'https://www.googleapis.com/auth/calendar.readonly'
+        'https://www.googleapis.com/auth/calendar'
     ]
 });
 

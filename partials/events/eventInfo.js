@@ -2,6 +2,17 @@ var app = angular.module('ritImprov');
 
 app.value('eventInfo',[
     {
+        name: "Squad Goals",
+        date: "Friday, August 28",
+        time: "8PM",
+        loc: "Webb Auditorium",
+        img: "",
+        type: "mainstage",
+        link: 'https://www.facebook.com/events/1468498873474459/',
+        vid: '',
+        desc: "What better way to ring in the new school year than with a Week 1 improv show with all your favorite teams!! The show is a completely FREE, live comedy show hosted by RIT Improv on Friday, August 28th at 8:00 PM in Webb Auditorium! This is your chance to get a taste of all the main stage teams- Work in Progress, The Improvessionals, & BrainWreck Improv! Each team will showcase themselves and then work together to make you laugh even harder! If you're an RA, bring all your freshman for a fun, free activity! Just a normal student? We'll take you too."
+    },
+    {
         name: "Tom Foolery",
         date: "Wednesday, May 13",
         time: "8PM",

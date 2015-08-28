@@ -1,4 +1,5 @@
-var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap']);
+/// <reference path="../typings/angularjs/angular.d.ts"/>
+var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap', 'ui.calendar', 'xml']);
 
 app.config(["$routeProvider", function($routeProvider) {
     $routeProvider
@@ -21,7 +22,7 @@ app.config(["$routeProvider", function($routeProvider) {
                 {
                     return $timeout(function ()
                     {
-                        return "imgs/favicons/DuckOrange.ico";
+                        return "imgs/favicons/DuckBlue.ico";
                     }, 500);
                 }]
             }
@@ -54,7 +55,7 @@ app.config(["$routeProvider", function($routeProvider) {
                 {
                     return $timeout(function ()
                     {
-                        return "imgs/favicons/DuckBlue.ico";
+                        return "imgs/favicons/DuckOrange.ico";
                     }, 500);
                 }]
             }

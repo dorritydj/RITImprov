@@ -1,7 +1,7 @@
 ﻿<view-title>Home - </view-title>
 <link view-head rel="shortcut icon" ng-href="{{homeCtrl.icon}}"/>
 
-<div>
+<div ng-controller="calendarController as calCtrl">
 
     <menu-bar page="home"></menu-bar>
 
@@ -13,4 +13,6 @@
         </slide>
     </carousel>
 
+
+    <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
 </div>

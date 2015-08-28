@@ -22,7 +22,7 @@ app.constant('navLinks', [
     {
         "name": "events",
         "link": "#/events",
-        img: "imgs/logos/logoBlue.png",
+        img: "imgs/logos/logoOrange.png",
         curr: false
     },
     /*{
@@ -34,7 +34,7 @@ app.constant('navLinks', [
     {
         "name": "about",
         "link": "#/about",
-        img: "imgs/logos/logoOrange.png",
+        img: "imgs/logos/logoBlue.png",
         curr: false
     }
 ]);

@@ -4,13 +4,11 @@ app.controller('homeController', ['icon', 'eventInfo', function (icon, eventInfo
 
     var self = this;
 
-    //self.cal = calId;
     self.icon = icon;
     self.slides = [];
 
     self.init = function() {
         self.loadEvent();
-        //self.getCalendarEvents();
     };
 
     self.loadEvent = function() {
@@ -18,16 +16,6 @@ app.controller('homeController', ['icon', 'eventInfo', function (icon, eventInfo
             self.slides.push(eventInfo[i]);
         }
     };
-
-    /*self.getCalendarEvents = function(){
-        GAPI.init();
-
-        var calPromise = Calendar.getCalendars(self.cal);
-
-        calPromise.then(function(data){
-            console.log(data);
-        })
-    };*/
 
     self.init();
 }]);

@@ -74,13 +74,13 @@
     }
 
     .eventsLoginBut{
-         background: #4994CE;
-         border: 1px solid #4994CE;
+         background: #F37E1F;
+         border: 1px solid #F37E1F;
      }
 
     .eventsLoginBut:hover{
-        background: #415B94;
-        border: 1px solid #415B94;
+        background: #B9621D;
+        border: 1px solid #B9621D;
     }
 
     .impLoginBut{
@@ -95,12 +95,12 @@
 
 
     .aboutLoginBut{
-        background-color: #F37E1F;
-        border: 1px solid #F37E1F;
+        background-color: #4994CE;
+        border: 1px solid #4994CE;
     }
 
     .aboutLoginBut:hover{
-        background-color: #B9621D;
-        border: 1px solid #B9621D;
+        background-color: #415B94;
+        border: 1px solid #415B94;
     }
 }

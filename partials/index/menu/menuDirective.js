@@ -7,8 +7,7 @@ app.directive('menuBar', ['navLinks', function(navLinks){
         templateUrl: 'partials/index/menu/menuBar.html',
         controller: 'menuController as menuCtrl',
         scope: {
-            page: "=",
-            img: "="
+            page: "="
         },
         link: function(scope, element, attr){
             for(var i = 0; i < navLinks.length; i++){
