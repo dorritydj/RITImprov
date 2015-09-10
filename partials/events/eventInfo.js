@@ -9,7 +9,9 @@ app.value('eventInfo',[
         img: "",
         type: "mainstage",
         link: 'https://www.facebook.com/events/1468498873474459/',
-        vid: '',
+        vid1: 'http://www.dailymotion.com/video/x33p702_rit-improv-squad-goals-pt-1_fun',
+        vid2: 'http://www.dailymotion.com/video/x33pbxw_rit-improv-squad-goals-pt-2_fun',
+        vid3: 'http://www.dailymotion.com/video/x33pcy3_rit-improv-squad-goals-pt-3_fun',
         desc: "What better way to ring in the new school year than with a Week 1 improv show with all your favorite teams!! The show is a completely FREE, live comedy show hosted by RIT Improv on Friday, August 28th at 8:00 PM in Webb Auditorium! This is your chance to get a taste of all the main stage teams- Work in Progress, The Improvessionals, & BrainWreck Improv! Each team will showcase themselves and then work together to make you laugh even harder! If you're an RA, bring all your freshman for a fun, free activity! Just a normal student? We'll take you too."
     },
     {

@@ -1,4 +1,3 @@
-/// <reference path="../typings/angularjs/angular.d.ts"/>
 var app = angular.module('ritImprov', ['ngRoute', 'viewhead', 'ui.bootstrap', 'ui.calendar', 'xml']);
 
 app.config(["$routeProvider", function($routeProvider) {
